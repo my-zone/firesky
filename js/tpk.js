@@ -153,7 +153,7 @@ tpk.controller("tpk_photo",function ($scope,$http,$location){
                 dataType : 'html',
                 success : function (result){
                    photo=get_csv(result,["image","name","sub","context"]);
-                   //console.log(photo[0]['image']="icon/ajax-loader.gif");
+                   console.log(photo);
                   
                    $scope.photo=photo;
                    $scope.show=false;
