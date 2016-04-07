@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Untitled Document</title>
+    <title>執行有愛，公益無礙</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -20,43 +20,78 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/tpk-index.css">
+    
 </head>
 <body ng-app="tpk" ng-controller="tpk_all">
     <div class="col-xs-12">
        <div class="container">
           <div class="row tpk-header" >
-                <div id="logo" class='col-xs-4'>
-                    <img src="image/tpk_logo.png" width="350px">
+                <div id="logo" >
+                    <img src="image/tpki_logo.png" width="100px">
                 </div>
-                <div class="tpk-menu text-right col-xs-7 col-xs-offset-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href='index.html'>首頁</a></li>
-                       <li ng-repeat="menu in tpk_menu"><a ng-href="ㄙreindex.html{{menu.url}}" >{{menu.name}}</a></li>
+                <div class='menu-box'>
+                   <div class='tpk-title'>
+                       <h3 class='col-xs-4 text-left'>法務部行政執行署</h3>
+                       <ul class='col-xs-4 col-xs-offset-4 list-inline '>
+                           <li>FaceBook</li>
+                           <li>執行署官網</li>
+                       </ul>
+                   </div>
+                    <div class="tpk-menu text-right col-xs-12 " >
+                    <ul class="menu-list">
+                       <li ng-repeat="menu in tpk_menu" ng-mouseover="ch()" ng-mouseover="ch2()"
+                        class='{{this.show}}'>{{menu.name}}</li>
                     </ul>
                 </div>
+
+                </div>
+                
             </div>
         </div>
     </div>
+     <div class="col-xs-12 ">
+       <div class="container">
+          <div class="row tpk-header" >
+          <div class="col-xs-12 sub-menu-back top-1" ng-mouseenter="ch3()"ng-mouseout='ch4()' style="background:#555">
+                    <div class='sub-menu'>
+                        <div ng-repeat="menu in tpk_menu" class='sub-m'>{{menu.name}}</div>
+                        
+                    </div>
+                </div>
+           </div>
+         </div>
+    </div>
+    
+    
     <div class="col-xs-12 banner-color" >
            <div class="container" id="banner">
-            <div class="banner-text">
-                <div class='image_back'> 
-                    <img src="image/tpk_logo.png" width="500">
-                    <p>
-                        測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試
-                        
-                    </p>
-                </div>
-               
+           <img>            
+        </div>
+    </div>
+    <div class='w100'>
+       <div class="container">
+        <div class="col-xs-12 btn-choose">
+                <div class="col-xs-5 col-xs-offset-1 text-center">
+                       <img width="300px" height="200px;">
+                       
+                      
+                   
+                   <p>實體檔案展詳細資訊</p>
+                    <div class='col-xs-12 text-center'>
+                        <button class='btn-default tpk-btn'>現場展覽</button>
+                    </div>
+                    </div>
+                 <div class="col-xs-5 col-xs-offset-1 text-center" >
+                    <img width="300px" height="200px;">
+                       
+                      
+                   
+                   <p>線上檔案展詳細資訊</p>
+                    
+                    <div class='col-xs-12 text-center'>
+                    <button class='btn-default tpk-btn'> 線上展覽</button></div>
             </div>
-            <div class="banner-btn">
-               <div class='btn-background'></div>
-               <div class="btn-cont">
-                <button class='btn-default tpk-btn'>現場展覽</button>
-                <button class='btn-default tpk-btn'> 線上展覽</button>
-                </div>
             </div>
-            
         </div>
     </div>
     <div class="col-xs-12">
@@ -77,7 +112,7 @@
             <p>
                  
             </p>
-<!--                ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝-->
+<!--============================================-->
         </div>
         <div class='online-exhibition'  ng-controller="tpk_index">
             <blockquote>

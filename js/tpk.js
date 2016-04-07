@@ -17,6 +17,24 @@ tpk.directive('imageonload', function() {
     };
 });
 tpk.controller("tpk_all",function ($scope,$http){
+    var chn=false;
+    $scope.ch=function (){
+       $(".sub-menu-back").show();
+    };
+    $scope.ch2=function (){
+        if(chn==false){
+        $(".sub-menu-back").hide();
+        }  
+    };
+    $scope.ch3=function (){
+        chn=true;
+        console.log(chn);
+    };
+    $scope.ch4=function (){
+        chn=false;
+        $(".sub-menu-back").hide();
+    };
+    
     
     $("#tpk_show_modal").hide();
     $http.get("data/menu.csv").success(function (data){
@@ -153,7 +171,7 @@ tpk.controller("tpk_photo",function ($scope,$http,$location){
                 dataType : 'html',
                 success : function (result){
                    photo=get_csv(result,["image","name","sub","context"]);
-                   console.log(photo);
+                   //console.log(photo[0]['image']="icon/ajax-loader.gif");
                   
                    $scope.photo=photo;
                    $scope.show=false;
