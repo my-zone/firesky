@@ -4,47 +4,108 @@ body,html{
     
 }
 .tpk-header{
-    height:150px;
+    height:auto;
+    
     
     
 }
 #logo{
-    margin-top:30px;
-    
+    width:100px;
+    float:left;
 }
 .banner-color{
     background-color:beige;
     
 }
-.tpk-menu{
-    margin-top:30px;
-    font-size: 18px;
+.menu-box{
+    width:91%;
+    float:left;
+    
+}
+.sub-menu{
+    width:91%;
+    margin-left:100px;
     
     
 }
+.menu-list{
+    list-style: none;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+.menu-list>li.show{
+    background:#555;
+    color:azure;
+    
+}
+.top-1{
+    margin-top:-10px;
+    
+}
+.menu-list>li{
+    color:black;
+    float:left;
+    margin-left:10px;
+    width:100px;
+    padding:10px;
+}
+.menu-list>li:hover{
+    background:#555;
+    color:azure;
+
+}
+.sub-menu-back{
+    position: absolute;
+    z-index: 999;
+    color: azure;
+    display: none;
+    
+}
+.sub-m{
+    color:black;
+    float:left;
+    margin-left:10px;
+    width:100px;
+    padding:10px;
+    text-align: center;
+    
+}
+
+.tpk-title{
+   
+    padding-left:20px;
+    
+}
+.tpk-menu{
+    font-size: 18px;
+}
 #banner{
     background-color: #FFF;
-    background-image: url("../image/banner.png")  ;
+    background-image: url("../image/banner.jpg")  ;
     background-size: 100% 100%;
     height:400px;
+}
+.w100{
+    width:100%;
+    clear:both;
+    background-color:burlywood;
+    color:black;
+    
+}
+.tpk-btn{
+    
+    
 }
 .banner-text{
     float:left;
     height:100%;
 }
-.banner-btn{
-    float:right;
-    height:100%;
+.btn-choose div{
+    padding-top:20px;
+    height:400px;
+   
     
-    width:400px;
-}
-.banner-btn .tpk-btn{
-    width:200px;
-    border-radius: 15%;
-    clear:both;
-    margin-top:50px;
-    height:60px;
-    margin-left:100px;
     
 }
 .btn-background{
